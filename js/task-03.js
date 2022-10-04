@@ -35,9 +35,9 @@ const images = [
 //imageContainerEl.append(...elements);
 
 //=============================================
-const galleryEl = document.querySelector(".gallery");
+const galleryRef = document.querySelector(".gallery");
 
-galleryEl.insertAdjacentHTML(`afterbegin`, images.map((img) =>
+galleryRef.insertAdjacentHTML(`afterbegin`, images.map((img) =>
   `<li class="gallery-item">
   <img
   src="${img.url}" 
@@ -47,4 +47,4 @@ galleryEl.insertAdjacentHTML(`afterbegin`, images.map((img) =>
     .join("")
 );
 
-console.log(galleryEl);
+console.log(galleryRef);
